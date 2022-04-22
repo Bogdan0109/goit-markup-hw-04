@@ -38,6 +38,10 @@ ol {
   margin: 0;
 }
 
+a {
+  display: block;
+}
+
 button {
   display: block;
   cursor: pointer;
@@ -239,12 +243,19 @@ img {
   justify-content: space-between;
 }
 
-.features-item {
-  width: 270px;
-}
-
 .features-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.features-soc-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .features-title {
@@ -273,7 +284,8 @@ img {
 }
 
 .occupation-title,
-.team-title {
+.team-title,
+.company-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -342,6 +354,7 @@ img {
 .team-soc-list {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .team-soc-item:not(:last-child) {
@@ -370,6 +383,38 @@ img {
   fill: #ffffff;
 }
 
+/* ----------------------------------SECTION.COMPANY-------------------------------------- */
+
+.company {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.company-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.company-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.company-icon {
+  fill: #afb1b8;
+  margin: 16px 32px;
+}
+
 /* -----------------INDEX-----------PORTFOLIO------------FOOTER------------------------------------ */
 
 .footer {
@@ -383,7 +428,7 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-list {
+.address {
   font-style: normal;
 }
 
@@ -403,6 +448,40 @@ img {
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-soc-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-soc-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-soc-icon {
+  fill: #ffffff;
 }
 
 /* -----------------------------------PORTFOLIO.HTML------------------------------------ */
