@@ -18,6 +18,9 @@ body {
   font-family: 'Roboto', 'sans-serif';
 
   letter-spacing: 0.03em;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 
   background-color: #ffffff;
 }
@@ -92,7 +95,7 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header .conteiner {
