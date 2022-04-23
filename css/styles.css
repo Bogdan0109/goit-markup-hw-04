@@ -122,6 +122,11 @@ img {
   color: var(--footer-logo-studio-color);
 }
 
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
 .header-list {
   display: flex;
 }
@@ -161,17 +166,15 @@ img {
   line-height: 1.14;
 
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 
   color: var(--header-list-address-color);
+  fill: currentColor;
 }
 
-.header-mailto::before {
-  display: inline-block;
-  content: '';
-  width: 16px;
-  height: 12px;
-  background-image: url(../images/symbol-defs.svg#icon-instagram);
-  fill: white;
+.header-icon {
+  margin-right: 10px;
 }
 
 .header-mailto:hover,
@@ -400,7 +403,7 @@ img {
   margin-right: 30px;
 }
 
-.company-div {
+.company-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -423,8 +426,17 @@ img {
   background-color: var(--background-color);
 }
 
+.footer .conteiner {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-div {
+  margin-right: 70px;
+}
+
 .footer-logo {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
 }
 
@@ -452,16 +464,14 @@ img {
 
 .footer-soc-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer-soc-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  margin-bottom: 20px;
   text-transform: uppercase;
-
   color: #ffffff;
 }
 
@@ -474,10 +484,16 @@ img {
   height: 44px;
   background-color: #ffffff;
   border-radius: 50%;
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
+
   background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: #2196f3;
 }
 
 .footer-soc-icon {
